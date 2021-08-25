@@ -1,29 +1,51 @@
-const checkBiggerThan100 = function(number) {
-if (number > 100) {
-    return "true";
-} return "false";
+function sumSquared1(number1,number2) {
+   return ((number1 * number1) + (number2 * number2)) *
+    ((number1 * number1) + (number2 * number2))
+ };
+ 
+ const result1 = sumSquared1(2,3);
+ console.log(result1);
+ 
+ const sumSquared2 = function(number1, number2) {   
+     return ((number1 * number1) + (number2 * number2)) *
+    ((number1 * number1) + (number2 * number2))
+ }
+
+ const result2 = sumSquared2(2,3);
+ console.log(result2);
+
+ const sumSquared3 = (number1, number2) => {   
+    return ((number1 * number1) + (number2 * number2)) *
+   ((number1 * number1) + (number2 * number2))
 }
 
-const result = checkBiggerThan100(500);
-console.log(result);
+const result3 = sumSquared2(2,3);
+console.log(result3);
 
-const bouncerBot = function (maximumNumber, currentNumber, age) {
-    if (currentNumber > maximumNumber) {
-        return "it's too busy now, come back later"
-    } else if (age < 18) {
-        return "this is a club for adults";
-    }
-    else return "come in";
-}
-
-const answer = bouncerBot(70, 80, 17);
-console.log(answer);
-
-const averageCalculation = function (number1, number2, number3, number4, number5) {
-    average = (number1 + number2 + number3 + number4 + number5) / 5;
-    averageRound = Math.round(average);
-    return averageRound;
-}
-
-const resultAverageCalc = averageCalculation(2, 2, 5, 2, 2);
-console.log(resultAverageCalc);
+ // // Function declaration
+ // function sayHello1() {
+ //     console.log('Hello 1');
+ // }
+ // sayHello1();
+ 
+ // // Function expression
+ // const sayHello2 = function() {
+ //     console.log('Hello 2');
+ // };
+ // sayHello2();
+ 
+ // //Arrow function (also a function expression)
+ // const sayHello3 = () => {
+ //     consule.log('Hello 3');
+ // }
+ // sayHello3();
+ 
+ // const sayHello = () => {
+ //     console.log("hello);
+ //   };
+ 
+ // const square = number => {
+ //     return number * number;
+ // };
+ 
+ 
