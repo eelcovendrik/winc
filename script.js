@@ -1,13 +1,22 @@
-var colors = ['yellow', 'blue', 'red', 'orange'];
+var person = prompt("Welkom wat is je naam?");
 
-let i = 0;
-while (i < colors.length) {
-  console.log(colors[i]);
-  i++;
+if (person != null) {
+    console.log( "Hey " + person);
 }
 
-for (i = 0; i < colors.length; i++) {
-  console.log(colors[i]);
+var number = prompt("Voer een nummer in van 0 tot 25 om te beginnen met raden...")
+
+number = parseInt(number)
+
+randomNumber = Math.floor(Math.random() * 25)
+
+while (number != randomNumber) {
+
+  console.log("Dat is niet correct");
+  var number = prompt("Probeer het nog een keer")
+  number = parseInt(number)
+
 }
 
-colors.forEach(element => console.log(element));
+console.log("Gefeliciteerd je hebt gewonnen");
+console.log("Dag " + person + " tot de volgende keer");
