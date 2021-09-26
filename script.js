@@ -1,22 +1,9 @@
-var person = prompt("Welkom wat is je naam?");
+var button = document.getElementById('mybutton');
+button.addEventListener('click',function(){alert('Alert!')});
 
-if (person != null) {
-    console.log( "Hey " + person);
-}
+body = document.body
 
-var number = prompt("Voer een nummer in van 0 tot 25 om te beginnen met raden...")
+var backgroundButton = document.getElementById('backgroundbutton');
+// backgroundButton.addEventListener('click',function(){body.classList.add('red-background')})
 
-number = parseInt(number)
-
-randomNumber = Math.floor(Math.random() * 25)
-
-while (number != randomNumber) {
-
-  console.log("Dat is niet correct");
-  var number = prompt("Probeer het nog een keer")
-  number = parseInt(number)
-
-}
-
-console.log("Gefeliciteerd je hebt gewonnen");
-console.log("Dag " + person + " tot de volgende keer");
+backgroundButton.addEventListener('click',function(){body.classList.toggle('red-background')})
